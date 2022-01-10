@@ -55,8 +55,7 @@ while(cur!=NULL)
 prev=cur;
  if(item==cur->info)
 {
-printf("Duplicate item are not
-allowed\n");
+printf("Duplicate item are notallowed\n");
 free(temp);
 return root;
 }
@@ -91,19 +90,14 @@ NODE root,cur;
 root=NULL;
 while (1)
 {
-printf("\nEnter
-thechoice\n1.Insert\n2.Preorder\n3.Inorder
-\n4.Postorder\n5.Search an
-Element\n6:Exit\n");
+printf("\nEnterthechoice\n1.Insert\n2.Preorder\n3.Inorder\n4.Postorder\n5.Search an Element\n6:Exit\n");
 scanf("%d",&ch);
 switch(ch)
 {
 case 1:
-printf("Enter the number of
-items\n");
+printf("Enter the number of items\n");
 scanf("%d",&n);
-printf("Enter the item to be
-inserted\n");
+printf("Enter the item to be inserted\n");
 for(i=0;i<n; i++)
 {
 scanf("%d",&item);
@@ -115,8 +109,7 @@ case 2: if(root==NULL)
 printf("Tree is empty\n");
 break;
 }
-printf("The given tree in tree form
-is\n");
+printf("The given tree in tree formis\n");
 printf("Preorder traversal is \n");
 preorder(root);
 printf("\n");
@@ -139,8 +132,7 @@ printf("Postorder traversal is \n");
 postorder(root);
 printf("\n");
 break;
-case 5: printf("Enter the item to be
-searched\n");
+case 5: printf("Enter the item to be searched\n");
 scanf("%d",&item);
 cur=search(item,root);
 if(cur==NULL)
