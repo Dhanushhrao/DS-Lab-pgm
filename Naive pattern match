@@ -5,12 +5,12 @@ int i, j, c, m, k, flag=0;
 void stringmatch()
 {
 i = m = c = j = 0;
-while(str[c] ! = '\0')
+while(str[c]!= '\0')
 {
-if(str[m] = = pat[i])
+if(str[m] == pat[i])
 {
 i++; m++;
-if(pat[i] = = '\0')
+if(pat[i] == '\0')
 {
 flag = 1;
 for(k = 0; rep[k] != '\0'; k++,
@@ -40,10 +40,8 @@ gets(pat);
 printf("\nEnter a replace string \n");
 gets(rep);
 stringmatch();
-if(flag = = 1)
-printf("\nThe resultant string is\n
-%s" , ans);
+if(flag == 1)
+printf("\nThe resultant string is\n%s" , ans);
 else
-printf("\nPattern string NOT
-found\n");
+printf("\nPattern string NOT found\n");
 }
